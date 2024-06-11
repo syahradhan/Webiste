@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 260px;
+    background-color: #25274d;
+    color: #fff;
+    padding: 20px;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    border-right: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.pro-sidebar-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pro-sidebar-logo .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #3f51b5;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.pro-sidebar-logo h5 {
+    font-size: 20px;
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #fff;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+.menu-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.menu-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.menu-title {
+    font-size: 1rem;
+}
+
+.footer-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.react-logo {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.sidebar-collapser {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #3f51b5;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #25274d;
+}
+
+.menu-item:hover {
+    background-color: #3f51b5;
+}
+
+.menu-item:hover a {
+    color: #fff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.blur-circle {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to bottom, white, pink);
+    border-radius: 50%;
+    filter: blur(150px);
+    position: absolute;
+    right: 50%;
+    transform: translate(50%);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+th {
+    background-color: #3f51b5;
+    color: #fff;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+    /* Tambahkan ini untuk mengatur teks ke tengah pada header */
+}
+
+td {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    /* Tambahkan ini untuk mengatur teks ke tengah pada sel data */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        overflow-x: auto;
+        display: block;
+    }
+
+    thead,
+    tbody,
+    tr,
+    th,
+    td {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: none;
+    }
+
+    td {
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    td:nth-of-type(1):before {
+        content: "Jam";
+    }
+
+    td:nth-of-type(2):before {
+        content: "Senin";
+    }
+
+    td:nth-of-type(3):before {
+        content: "Selasa";
+    }
+
+    td:nth-of-type(4):before {
+        content: "Rabu";
+    }
+
+    td:nth-of-type(5):before {
+        content: "Kamis";
+    }
+
+    td:nth-of-type(6):before {
+        content: "Jumat";
+    }
+
+    td:nth-of-type(7):before {
+        content: "Sabtu";
+    }
+}

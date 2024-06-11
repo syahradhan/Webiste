@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 260px;
+    background-color: #25274d;
+    color: #fff;
+    padding: 20px;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    border-right: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.pro-sidebar-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pro-sidebar-logo .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #3f51b5;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.pro-sidebar-logo h5 {
+    font-size: 20px;
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #fff;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+.menu-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.menu-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.menu-title {
+    font-size: 1rem;
+}
+
+.footer-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.react-logo {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.sidebar-collapser {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #3f51b5;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome-message {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.instruction {
+    font-size: 18px;
+    color: #666;
+}
+
+.cta-button {
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #5265e5;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning SMP</title>
+    <link rel="stylesheet" href="../styles/mapel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="sidebar">
+            <div class="pro-sidebar-logo">
+                <div class="logo">E-L</div>
+                <h5>E-Learning SMP</h5>
+            </div>
+            <ul class="menu">
+                <li class="menu-item active"><a href="home.html"><i class="fas fa-home menu-icon"></i><span
+                            class="menu-title">Beranda</span></a></li>
+                <li class="menu-item"><a href="mapel.html"><i class="fas fa-book menu-icon"></i><span
+                            class="menu-title">Mata
+                            Pelajaran</span></a></li>
+                <li class="menu-item"><a href="kelas.html"><i class="fas fa-users menu-icon"></i><span
+                            class="menu-title">Kelas</span></a></li>
+                <li class="menu-item"><a href="profile.html"><i class="fas fa-user menu-icon"></i><span
+                            class="menu-title">Profil
+                            Siswa</span></a></li>
+                <li class="menu-item"><a href="pengaturan.html"><i class="fas fa-cog menu-icon"></i><span
+                            class="menu-title">Pengaturan</span></a></li>
+                <li class="menu-item"><a href="keluar.php"><i class="fas fa-sign-out-alt menu-icon"></i><span
+                            class="menu-title">Keluar</span></a></li>
+            </ul>
+            <div class="sidebar-collapser" onclick="toggleSidebar()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Jadwal Mata Pelajaran SMP</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="jam">Jam</th>
+                        <th class="mata-pelajaran">Senin</th>
+                        <th class="mata-pelajaran">Selasa</th>
+                        <th class="mata-pelajaran">Rabu</th>
+                        <th class="mata-pelajaran">Kamis</th>
+                        <th class="mata-pelajaran">Jumat</th>
+                        <th class="mata-pelajaran">Sabtu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td class="jam">07:00 - 07:30</td>
+                        <td class="mata-pelajaran">Istirahat</td>
+                        <td class="mata-pelajaran">Istirahat</td>
+                        <td class="mata-pelajaran">Istirahat</td>
+                        <td class="mata-pelajaran">Istirahat</td>
+                        <td class="mata-pelajaran">Istirahat</td>
+                        <td class="mata-pelajaran">Istirahat</td>
+                    </tr> -->
+                    <tr>
+                        <td class="jam">07:30 - 08:30</td>
+                        <td class="mata-pelajaran">Matematika</td>
+                        <td class="mata-pelajaran">Bahasa Inggris</td>
+                        <td class="mata-pelajaran">Ilmu Pengetahuan Alam</td>
+                        <td class="mata-pelajaran">Bahasa Indonesia</td>
+                        <td class="mata-pelajaran">Pendidikan Agama</td>
+                        <td class="mata-pelajaran">Seni Budaya</td>
+                    </tr>
+                    <tr>
+                        <td class="jam">08:30 - 09:00</td>
+                        <td class="mata-pelajaran">Istirahat</td>
+                        <td class="mata-pelajaran">Istirahat</td>
+                        <td class="mata-pelajaran">Istirahat</td>
+                        <td class="mata-pelajaran">Istirahat</td>
+                        <td class="mata-pelajaran">Istirahat</td>
+                        <td class="mata-pelajaran">Istirahat</td>
+                    </tr>
+                    <tr>
+                        <td class="jam">09:00 - 10:00</td>
+                        <td class="mata-pelajaran">Bahasa Indonesia</td>
+                        <td class="mata-pelajaran">Matematika</td>
+                        <td class="mata-pelajaran">Bahasa Inggris</td>
+                        <td class="mata-pelajaran">Ilmu Pengetahuan Alam</td>
+                        <td class="mata-pelajaran">Bahasa Indonesia</td>
+                        <td class="mata-pelajaran">Pendidikan Agama</td>
+                    </tr>
+                    <tr>
+                        <td class="jam">10:00 - 11:00</td>
+                        <td class="mata-pelajaran">Pendidikan Kewarganegaraan</td>
+                        <td class="mata-pelajaran">Seni Budaya</td>
+                        <td class="mata-pelajaran">Matematika</td>
+                        <td class="mata-pelajaran">Bahasa Inggris</td>
+                        <td class="mata-pelajaran">Ilmu Pengetahuan Alam</td>
+                        <td class="mata-pelajaran">Bahasa Indonesia</td>
+                    </tr>
+                    <tr>
+                        <td class="jam">11:00 - 11:30</td>
+                        <td class="mata-pelajaran">Makan Siang</td>
+                        <td class="mata-pelajaran">Makan Siang</td>
+                        <td class="mata-pelajaran">Makan Siang</td>
+                        <td class="mata-pelajaran">Makan Siang</td>
+                        <td class="mata-pelajaran">Makan Siang</td>
+                        <td class="mata-pelajaran">Makan Siang</td>
+                    </tr>
+                    <tr>
+                        <td class="jam">11:30 - 12:30</td>
+                        <td class="mata-pelajaran">Olahraga</td>
+                        <td class="mata-pelajaran">Pendidikan Agama</td>
+                        <td class="mata-pelajaran">Seni Budaya</td>
+                        <td class="mata-pelajaran">Matematika</td>
+                        <td class="mata-pelajaran">Bahasa Inggris</td>
+                        <td class="mata-pelajaran">Ilmu Pengetahuan Alam</td>
+                    </tr>
+                    <tr>
+                        <td class="jam">12:30 - 13:00</td>
+                        <td class="mata-pelajaran">Pramuka</td>
+                        <td class="mata-pelajaran">Ekstrakurikuler</td>
+                        <td class="mata-pelajaran">Olahraga</td>
+                        <td class="mata-pelajaran">Pendidikan Kewarganegaraan</td>
+                        <td class="mata-pelajaran">Pramuka</td>
+                        <td class="mata-pelajaran">Ekstrakurikuler</td>
+                    </tr>
+                    <tr>
+                        <td class="jam">13:00 - 14:00</td>
+                        <td class="mata-pelajaran">Bahasa Indonesia</td>
+                        <td class="mata-pelajaran">Pendidikan Agama</td>
+                        <td class="mata-pelajaran">Pendidikan Kewarganegaraan</td>
+                        <td class="mata-pelajaran">Pendidikan Kewarganegaraan</td>
+                        <td class="mata-pelajaran">Olahraga</td>
+                        <td class="mata-pelajaran">Olahraga</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../back/main.js"></script>
+</body>
+
+</html>
